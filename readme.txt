@@ -8,3 +8,32 @@
 Как минимум последняя строка только с общей суммой выбила прогу.
 2. Не сообщает о происходящих ошибках.
 3. Не сообщает о записи файла.
+
+Необходимо:
+
+Основное:
+1. Устанавливаем Python 2.7 -> python-2.7.3.msi
+2. Устанавливаем setuptools -> setuptools-0.6c11.win32-py2.7.exe
+
+Библиотеки для работы с Excel:
+setup.py install
+toExcel\
+1. описание python-excel.pdf
+2. Устанавливаем xlrd -> xlrd-0.9.2.tar.gz
+3. Устанавливаем xlwt -> xlwt-0.7.5.tar.gz
+4. Устанавливаем xlutils -> xlutils-1.7.0.tar.gz
+
+Библиотеки для работы с QT:
+toQT
+1. Устанавливаем PyQt4-4.10.3-gpl-Py2.7-Qt4.8.5-x64.exe
+(либо PyQt4-4.10.3-gpl-Py2.7-Qt4.8.5-x32.exe)
+1*. Предыдущие версии PyQt-Py2.7-x64-gpl-4.9.5-1.exe
+(либо PyQt-Py2.7-x86-gpl-4.9.5-1.exe)
+
+Библиотеки для создания EXE файлов:
+toExe
+1. Устанавливаем py2exe-0.6.9.win32-py2.7.amd64.exe
+(py2exe-0.6.9.win32-py2.7.exe) 
+2. Устанавливаем vcredist_x86.exe
+3. Запуск setup.py py2exe
+в setup.py прописать путь до файлов \Microsoft.VC90.CRT	
